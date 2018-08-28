@@ -38,14 +38,15 @@ In case, the project gets bigger, and we need to separate api and web part, the 
   - For now, this looks OK, and still will be searching for a way to do restart cause just in case.
   - It's not a big deal to refresh the window when you are on it. And, sometimes it helps. You can open two windows, one with non-reloaded page, and one with the current page which helps in comparison. There may be other advantages and disadvantages.
 
-- The webpack config doesn't support multiple pages as of now, like about us, blog, home as three separate pages with different endpoints. It's kind of an SPA. It can be done quite easily with webpack by just providing multiple entry points. Some stuff available online
-  - https://webpack.js.org/concepts/entry-points/
-  - https://github.com/webpack/webpack/tree/master/examples/multiple-entry-points
+- This template doesn't support multiple pages as of now, like about us, blog, home as three separate pages with different endpoints. It's kind of an SPA.
+  - It can be done with webpack by just providing multiple entry points. References
+    - https://webpack.js.org/concepts/entry-points/
+    - https://github.com/webpack/webpack/tree/master/examples/multiple-entry-points
 
-- But in this config, I am using HTMLWebpackPlugin which generates like one html. There are some discussions around it which I am seeing to make it work with multiple entry points.
-  - https://github.com/jantimon/html-webpack-plugin/issues/218
+  - But in this config, I am using HTMLWebpackPlugin which generates one html. There are some discussions around it which I am seeing to make it work with multiple entry points.
+    - https://github.com/jantimon/html-webpack-plugin/issues/218
 
-This is something which looks important to me as in I might be needing to use it soon enough, but as of now, I have not built something which needs multiple entry points. Anyway, I will be looking at this issue as well, and updating the config when a solution is found.
+  - This is something which looks important to me as in I might be needing to use it soon enough, but as of now, I have not built something which needs multiple entry points. Anyway, I will be looking at this issue as well, and updating the config when a solution is found.
 
 - There is no extra stuff like image loaders, font loaders, tests folder or scripts, linter, editor config etc. In essence, it is a basic webpack build with VueJS. Extra stuff may be added as required. The reason to not add here is that config depends and changes with the tools used. Image loaders and font loaders didn't look important enough as of now. If required, will add them as well.
 
