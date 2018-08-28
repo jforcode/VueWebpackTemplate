@@ -4,13 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "prod-build": "webpack --config webpack.prod.js",
-    "dev": "webpack-dev-server --open --config webpack.dev.js",
+    "dev-watch": "webpack --watch --config config/webpack.dev.js",
+    "prod-build": "webpack --config config/webpack.prod.js",
+    "dev": "npm run dev-watch & nodemon app.js",
     "prod": "npm run prod-build && node app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jforcode/css_generator.git"
   },
   "keywords": [],
   "author": "jforcode",
