@@ -1,7 +1,6 @@
-function init (express, app) {
+const express = require('express')
+const router = express.Router()
 
-  app.get('/hello', (req, res) => res.send('Hello World'))
+router.use('/hello', (req, res) => res.send('Hello World'))
 
-}
-
-module.exports = { init }
+module.exports = router
