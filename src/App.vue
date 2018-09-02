@@ -8,12 +8,20 @@
 export default {
   data () {
     return {
-      message: 'Hello wORLD!'
+      message: 'Something funny!'
     }
   }
 }
 </script>
 
 <style lang="css">
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
 
 </style>
